@@ -1,0 +1,242 @@
+/* ==========================================================================
+   CHURRASCO RESTAURANT - HIGH-ENERGY & CELEBRATORY STYLESHEET
+   ========================================================================== */
+
+:root {
+    --primary-red: #D32F2F;        /* Spicy Peri-Peri Red */
+    --accent-orange: #FF6F00;     /* Flame Orange */
+    --gold-yellow: #FFC107;       /* Celebration Gold */
+    --dark-charcoal: #121212;     /* Dark Charcoal Background */
+    --card-bg: #1E1E1E;           /* Sleek Dark Card */
+    --light-text: #F5F5F5;        /* Off-White Text */
+    --subtle-gray: #A0A0A0;       /* Muted Text */
+    --glow-effect: 0 0 20px rgba(255, 111, 0, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-charcoal);
+    color: var(--light-text);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #8B0000 0%, #D32F2F 50%, #FF6F00 100%);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    border-radius: 50%;
+    border: 3px solid var(--gold-yellow);
+    box-shadow: var(--glow-effect);
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: var(--gold-yellow);
+    color: var(--dark-charcoal);
+    box-shadow: 0 0 15px var(--gold-yellow);
+    transform: translateY(-3px);
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2, h3 {
+    color: var(--accent-orange);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-red);
+    padding-bottom: 0.3rem;
+}
+
+article {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--glow-effect);
+    border-color: var(--accent-orange);
+}
+
+article h4 {
+    color: var(--gold-yellow);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+article img, section img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+article:hover img {
+    transform: scale(1.03);
+}
+
+article p strong {
+    color: var(--accent-orange);
+    font-size: 1.2rem;
+}
+
+button, a.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--primary-red), var(--accent-orange));
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(211, 47, 47, 0.5);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover, a.cta-button:hover {
+    background: linear-gradient(45deg, var(--accent-orange), var(--gold-yellow));
+    color: var(--dark-charcoal);
+    box-shadow: 0 0 20px var(--accent-orange);
+    transform: scale(1.05);
+}
+
+form div {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    font-weight: 600;
+    color: var(--gold-yellow);
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2A2A2A;
+    color: var(--light-text);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-orange);
+    box-shadow: 0 0 10px var(--accent-orange);
+}
+
+blockquote {
+    background-color: #251810;
+    border-left: 5px solid var(--gold-yellow);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+blockquote footer {
+    color: var(--accent-orange);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: right;
+    background: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #0A0A0A;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 3px solid var(--primary-red);
+    color: var(--subtle-gray);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
+}

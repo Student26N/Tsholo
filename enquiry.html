@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry & Reservations | Churrasco Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="Gallery/logo.jpg" alt="Churrasco Portuguese Rooster Logo" width="120">
+            <h1>Churrasco Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Menu</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Table Reservations & Group Booking Enquiries</h2>
+            <p>We accept reservations for lunch, dinner, group celebrations, and outdoor seating requests.</p>
+            
+            <form action="#" method="POST" style="margin-top: 1.5rem;">
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div>
+                    <label for="enquiryType">Service Needed:</label>
+                    <select id="enquiryType" name="enquiryType">
+                        <option value="reservation">Table Reservation (Dine-in)</option>
+                        <option value="outdoor">Outdoor Seating Reservation</option>
+                        <option value="group">Group Event / Party</option>
+                        <option value="takeaway">Takeaway Order Enquiry</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="seatingPreference">Seating & Accessibility Requirements:</label>
+                    <select id="seatingPreference" name="seatingPreference">
+                        <option value="standard">Standard Seating</option>
+                        <option value="wheelchair">Wheelchair Accessible Seating Required</option>
+                        <option value="outdoor">Outdoor Patio</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Date, Time & Special Requests:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Submit Enquiry / Reservation</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Churrasco Restaurant. All rights reserved.</p>
+    </footer>
+ <script src="js/script.js"></script>
+</body>
+</html>

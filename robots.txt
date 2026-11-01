@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://student26n.github.io/Tsholo/sitemap.xml
